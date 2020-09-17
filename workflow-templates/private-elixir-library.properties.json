@@ -1,0 +1,9 @@
+{
+  "name": "Privately published Elixir Library",
+  "description": "A workflow which tests, lints and publishes Elixir libraries to our private hex organisation",
+  "iconName": "elixir",
+  "categories": [
+    "Elixir",
+    "Erlang"
+  ]
+}
