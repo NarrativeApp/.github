@@ -1,0 +1,9 @@
+{
+  "name": "Narrative Elixir Service",
+  "description": "A workflow which tests, lints and deploys Elixir services to our infrastructure",
+  "iconName": "elixir",
+  "categories": [
+    "Elixir",
+    "Erlang"
+  ]
+}
