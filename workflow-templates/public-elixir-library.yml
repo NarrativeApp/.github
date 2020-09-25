@@ -193,6 +193,8 @@ jobs:
         with:
           name: ${{ steps.app-name.outputs.app-name }}-docs-${{ steps.app-version.outputs.app-version }}.tar.gz
           path: docs.tar.gz
+      - name: Publishing hex package
+        run: mix hex.publish --yes
       - name: Creating new Github release
         id: create-release
         uses: actions/create-release@v1
@@ -222,5 +224,3 @@ jobs:
           asset_path: docs.tar.gz
           asset_name: ${{ steps.app-name.outputs.app-name }}-docs-${{ steps.app-version.outputs.app-version }}.tar.gz
           asset_content_type: application/gzip
-      - name: Publishing hex package
-        run: mix hex.publish --yes
