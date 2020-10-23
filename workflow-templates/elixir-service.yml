@@ -93,7 +93,7 @@ jobs:
           name: build
           path: _build/
       - name: Downloading service Credo configuration
-        run: curl -sSL -o .credo.exs https://raw.githubusercontent.com/NarrativeApp/.github/elixir-service/workflow-templates/credo.exs
+        run: curl -sSL -o .credo.exs https://raw.githubusercontent.com/NarrativeApp/.github/master/workflow-templates/credo.exs
       - run: mix credo --strict
 
   formatter:
